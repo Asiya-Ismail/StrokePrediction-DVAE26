@@ -10,7 +10,7 @@ A Random Forest and Decision Tree model trained to predict the likelihood of a s
 
 ### Challenges Faces and Measures Taken for Data Integrity
 - There was 201 missing values in BMI.
-- Found outliers in BMI and Average Glucose Levels but could not remove since it the models ability to predict well. I fixed this by using scaling and models noy sensitive to outliers like Random Forest.
+- Found outliers in BMI and Average Glucose Levels but could not remove since it would affect the models ability to predict well. I fixed this by using scaling and models noy sensitive to outliers like Random Forest.
 - The dataset contained more people with no stroke than with stroked, I solved this using SMOTE to make the two categories balanced.
 - BMI also was found to have 972 null values, this was corrected using KNNImputer which fills missing values by using the K-Nearest Neighbors algorithm.
 - Random Forest Model performance was improved by fine-tuning hyperparameters.
