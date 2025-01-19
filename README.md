@@ -8,10 +8,10 @@ A Random Forest and Decision Tree model trained to predict the likelihood of a s
 ### Data Source
 - The dataset is used in this project is sourced from the Stroke Prediction Kaggle dataset.
 
-### Challenges Faces and Measures Taken for Data Integrity
-- There was 201 missing values in BMI.
-- Found outliers in BMI and Average Glucose Levels but could not remove since it would affect the models ability to predict well. I fixed this by using scaling and models noy sensitive to outliers like Random Forest.
-- The dataset contained more people with no stroke than with stroked, I solved this using SMOTE to make the two categories balanced.
+### Challenges Faced and Measures Taken for Data Integrity
+- There were 201 missing values in BMI.
+- Outliers in BMI and Average Glucose Levels were identified but retained to preserve the model's predictive performance. I fixed this by using scaling and robust models like Random Forest, which are less affected by outliers, were used..
+- The dataset contained more people with no stroke than with stroke, I solved this using SMOTE to make the two categories balanced.
 - BMI also was found to have 972 null values, this was corrected using KNNImputer which fills missing values by using the K-Nearest Neighbors algorithm.
 - Random Forest Model performance was improved by fine-tuning hyperparameters.
 
@@ -33,14 +33,14 @@ A Random Forest and Decision Tree model trained to predict the likelihood of a s
 ### Model Development Steps
 - **Step 1**: Loaded data using pandas.
 - **Step 2**: Cleaned and preprocessed features
-- **Step 2**: Did some feature engineering by creating a new feature(age_group)
+- **Step 2**: Performed feature engineering by creating a new feature (age_group).
 - **Step 3**: Trained Random Forest model using grid search for hyperparameter tuning. Also trained a decision tree model.
 - **Step 4**: Evaluated models with accuracy and confusion matrix.
 - **Step 5**: Saved the Random Forest model using joblib.
 - **Step 6**: Deployed to hugging face
 
 ## Key Findings
-- Found that more married people were prone to strokes than not married people.
+- A higher proportion of married individuals experienced strokes compared to unmarried individuals.
 - Also found that having hypertension and heart disease has a correlation to getting strokes.
 - The average age of patients is 43, with the majority of the population being female.
 - Visualizations of feature distributions and correlations are available in the Data Exploration and Quality Analysis section of the jupyter notebook.
