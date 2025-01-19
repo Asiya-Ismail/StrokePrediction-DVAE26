@@ -1,7 +1,7 @@
 # Stroke Prediction with Random Forest
 
 ## Introduction
-A Random Forest and Decision Tree model trained to predict the likelihood of a stroke based on various patient features like age, BMI, and medical history. They were then both compared to find the best model for predictions. The random forest trees was the better model for predictions. The accuracy in predictions for the decision tree model was 97 and for random forest model 99.
+A Random Forest and Decision Tree model trained to predict the likelihood of a stroke based on various patient features like age, BMI, and medical history. They were then both compared to find the best model for predictions. The random forest model was the better model for predictions. The accuracy in predictions for the decision tree model was 97 and for random forest model 99.
 
 ## Data Quality Report
 
